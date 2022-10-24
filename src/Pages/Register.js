@@ -34,7 +34,7 @@ export const Register = () => {
             body: JSON.stringify({ uname: username, pw: password })
         };
         console.log(requestOptions.body);
-        await fetch('/register', requestOptions).then((res) => handleRegisterStatuses(res));
+        await fetch('https://fitr-backend-production.up.railway.app/register', requestOptions).then((res) => handleRegisterStatuses(res));
     }
 
     // method="post" action="register"

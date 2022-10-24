@@ -50,7 +50,7 @@ export const LoginPage = (props) => {
                 pw: password
             })
         };
-        await fetch('/login', requestOptions)
+        await fetch('https://fitr-backend-production.up.railway.app/login', requestOptions)
             .then((res) => handleLogin(res));
     }
 

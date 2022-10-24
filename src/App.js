@@ -23,7 +23,7 @@ function App() {
         headers: { 'Content-Type': 'application/json' }
     }
     try {
-      await fetch('/auth', requestOptions)
+      await fetch('https://fitr-backend-production.up.railway.app/auth', requestOptions)
         .then((res) => handleAuth(res))
     } catch (err) {
       console.log(err);
@@ -61,7 +61,7 @@ function App() {
   }
   try {
     console.log('You are fetching GET allEvents!');
-    await fetch('/allEvents', requestOptions)
+    await fetch('https://fitr-backend-production.up.railway.app/allEvents', requestOptions)
       .then(res => res.json())
       .then(res => handleAddAllEvents(res));
   } catch (err) {
