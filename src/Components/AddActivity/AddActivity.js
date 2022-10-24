@@ -39,7 +39,7 @@ export const AddActivity = (props) => {
             }
         })
     };
-    await fetch('/addEvent', requestOptions)
+    await fetch('https://fitr-backend-production.up.railway.app/addEvent', requestOptions)
       .then(res => res.json(res))
       .then(res => updateStateAfterAddingEvent(res));
 }
